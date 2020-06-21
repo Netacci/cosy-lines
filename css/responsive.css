@@ -120,7 +120,7 @@
   }
 
   /* NON SLIDE REVIEW FOR DESKTOP AND TAB STARTS HERE */
-  /*   .carousel {
+  .carousel {
       display: none;
     }
     .non-slide-wrapper {
@@ -146,7 +146,7 @@
       height: 73px;
       left: 3%;
       top: 3%;
-    } */
+    }
 }
 
 @media all and (min-width: 992px) {
@@ -602,41 +602,7 @@
 
 
   /* NON SLIDE REVIEW FOR DESKTOP AND TAB STARTS HERE */
-  .carousel {
-    display: none;
-  }
-
-  .non-slide-wrapper {
-    display: flex;
-    padding: 4%;
-    margin-top: 0;
-  }
-
-  .firstreview {
-    padding: 5px;
-    
-  }
-
-  .secondpreview,
-  .thirdpreview {
-    margin-left: 2%;
-  }
-
-
-  .review-text {
-    font-size: 1rem;
-  }
-
-  .user-name,
-  .user-title {
-    font-size: 0.665rem;
-  }
-
-  .review-text::before {
-    height: 73px;
-    left: 3%;
-    top: 3%;
-  }
+  
 }
 
 
