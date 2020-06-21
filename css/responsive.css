@@ -555,20 +555,6 @@
     margin-top: 7%;
   }
 
-  .header-body_text {
-    text-align: left;
-    line-height: 3.8rem;
-    padding: 0;
-
-  }
-
-  .header-body_text {
-    color: #fff;
-    font-weight: 700;
-    font-size: 3rem;
-    line-height: 3.2rem;
-  }
-
   h2 {
     font-size: 36px;
   }
@@ -603,10 +589,6 @@
 
   #client-reviews p.sub-head {
     font-size: 24px;
-  }
-
-  .review-text {
-    font-size: 20px;
   }
 
   .user {
