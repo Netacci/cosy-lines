@@ -56,19 +56,15 @@
   }
 
   .main-title_text {
-    font-size: 2.15rem;
-    font-weight: 400;
+    font-size: 1.275rem;
   }
-
-  .why-us_main-title .main-title_p,
-  .why-col .why-us_title {
-    margin-top: 2%;
-    font-size: 24px;
+  .main-title_p {
+    margin-top: 4%;
   }
 
   .why-us_sub-title {
-    margin-top: 6%;
-    font-weight: 400;
+    margin-top: 5%;
+    font-size: 1.275rem;
   }
 
   .why-us_title::after {
@@ -167,7 +163,7 @@
   .navbar {
     display: flex;
     justify-content: space-between;
-    padding: 0.9em 0 0.9em 0;
+    padding: 1em 0 0em 0;
     overflow: hidden;
   }
 
@@ -193,6 +189,27 @@
   .main-nav .nav-item .nav-link:hover::after {
     color: #e4a13d !important;
     transform: translateY(-25px);
+  }
+  
+  .activenav {
+    position: relative;
+  }
+
+  .activenav:hover::after {
+    transform: none;
+    pointer-events: none;
+
+  }
+
+  .activenav::after {
+    content: '';
+    width: 100%;
+    height: 5px;
+    background-color: #E4A13D;
+    position: absolute;
+    left: 0;
+    bottom: 1%;
+
   }
 
   .navbar-collapse {
@@ -290,20 +307,15 @@
   /* HOW IT WORKS SECTION */
   .round-btn,
   .round-btn3 {
-    height: 4.7em;
-    font-size: 18px;
-  }
-
-  .round-btn2 {
-    font-size: 18px;
+    height: 5em;
   }
 
   .round-btn::after {
-    height: 150px;
+    height: 122px;
   }
 
   .round-btn2::after {
-    height: 123px;
+    height: 131px;
   }
 
 
@@ -329,7 +341,7 @@
     padding-bottom: 10%;
   }
 
-  .signup-section .sign-up {
+  .sign-up {
     grid-column: 1/3;
     font-size: 2rem;
     font-weight: 700;
@@ -430,6 +442,16 @@
     left: 62%;
     font-size: 20px;
   }
+  /* NON SLIDE REVIEW FOR DESKTOP AND TAB STARTS HERE */
+
+  .review-text::before {
+    left: 0%;
+  }
+
+  .review-text {
+    font-size: 1.2rem;
+
+  }
 
 }
 
@@ -463,6 +485,19 @@
 
   .header-body_p {
     width: 70%;
+  }
+  .review-text::before {
+    left: 3%;
+  }
+
+  .review-text {
+    font-size: 1.7rem;
+
+  }
+
+  .user-name,
+  .user-title {
+    font-size: 1rem;
   }
 }
 
@@ -575,11 +610,6 @@
     line-height: 3.2rem;
   }
 
-  /*     p {
-      font-size: 18px;
-  } */
-
-
   h2 {
     font-size: 36px;
   }
@@ -646,8 +676,8 @@
   }
 
   .firstreview {
-    /* padding: 5px; */
-    box-sizing: border-box;
+    padding: 5px;
+    
   }
 
   .secondpreview,
@@ -656,10 +686,19 @@
   }
 
 
+  .review-text {
+    font-size: 1rem;
+  }
 
   .user-name,
   .user-title {
     font-size: 0.665rem;
+  }
+
+  .review-text::before {
+    height: 73px;
+    left: 3%;
+    top: 3%;
   }
 }
 
@@ -679,6 +718,12 @@
   .non-slide-wrapper {
     margin-top: 5%;
     margin-bottom: 10%;
+  }
+
+  .review-text::before {
+    height: 65px;
+    left: 0%;
+    top: 2%;
   }
 
   .user-name,
@@ -711,8 +756,13 @@
   }
 
   /* NON SLIDE REVIEW FOR DESKTOP AND TAB STARTS HERE */
+  .review-text::before {
+    left: 3%;
+  }
+
   .review-text {
     font-size: 1.7rem;
+
   }
 
   .user-name,
